@@ -85,7 +85,8 @@ export default {
 				<!-- Header logos -->
 				<div>
 					<router-link to="/"
-						><img
+						>
+						<!-- <img
 							v-if="theme === 'light'"
 							src="@/assets/images/logo-dark.svg"
 							class="w-36"
@@ -96,7 +97,12 @@ export default {
 							src="@/assets/images/logo-light.svg"
 							class="w-36"
 							alt="Light Logo"
-						/>
+						/> -->
+						<h1
+				class="font-general-semibold text-3xl md:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light web-title"
+			>
+							JJPortfolio
+						</h1>
 					</router-link>
 				</div>
 
@@ -177,5 +183,9 @@ export default {
 	@apply text-indigo-700;
 	@apply dark:text-indigo-400;
 	@apply font-medium;
+}
+
+.web-title {
+	color: rgb(251, 153, 45);
 }
 </style>
