@@ -52,11 +52,11 @@ export default {
 		</div>
 
 		<div
-			class="grid grid-cols-3 mt-6 sm:gap-10"
+			class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10"
 		>
 			<div v-for="myservice in myservices"
 				:key="myservice.id"
-				class="rounded-xl shadow-lg p-10 hover:shadow-xl cursor-pointer sm:p-4 bg-secondary-light dark:bg-ternary-dark">
+				class="rounded-xl shadow-lg p-10 sm:p-4 mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
 				<div>
 					<img
 						:src="myservice.img"
