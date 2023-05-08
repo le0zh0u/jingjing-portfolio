@@ -52,7 +52,7 @@ export default {
 				<a
 					download="Stoman-Resume.pdf"
 					href="/files/Stoman-Resume.pdf"
-					class="flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-orange-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-full bg-orange-400 focus:ring-1 focus:ring-orange-900 hover:bg-orange-600 text-white duration-500 uppercase"
+					class="flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-orange-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-full focus:ring-1 bg-orange-400 hover:bg-orange-600 focus:ring-orange-900 text-white duration-500 uppercase"
 					aria-label="Download Resume"
 				>
 					<span
@@ -66,14 +66,8 @@ export default {
 		<!-- Banner right illustration -->
 		<div class="w-full md:w-2/3 text-right float-right">
 			<img
-				v-if="theme === 'light'"
-				src="@/assets/images/developer.svg"
-				alt="Developer"
-			/>
-			<img
-				v-else
-				src="@/assets/images/developer-dark.svg"
-				alt="Developer"
+				src="@/assets/images/banner-photo.png"
+				alt="photo"
 			/>
 		</div>
 	</section>

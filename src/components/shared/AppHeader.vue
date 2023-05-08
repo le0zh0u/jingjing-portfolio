@@ -153,9 +153,9 @@ export default {
 				<div class="hidden md:block">
 					<Button
 						title="联系我"
-						class="text-md font-general-medium bg-amber-500 hover:bg-amber-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
+						class="text-md font-general-medium bg-orange-400 hover:bg-orange-600  text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
 						@click="showModal()"
-						aria-label="Hire Me Button"
+						aria-label="联系我"
 					/>
 				</div>
 
@@ -173,7 +173,7 @@ export default {
 			:showModal="showModal"
 			:modal="modal"
 			:categories="categories"
-			aria-modal="Hire Me Modal"
+			aria-modal="联系我弹窗"
 		/>
 	</nav>
 </template>

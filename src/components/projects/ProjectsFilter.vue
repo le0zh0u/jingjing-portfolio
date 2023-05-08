@@ -9,10 +9,12 @@ export default {
 		selectOptions: {
 			type: Array,
 			default: () => [
-				'Web Application',
-				'Mobile Application',
-				'UI/UX Design',
-				'Branding & Anim',
+				'APP设计',
+				'UI设计',
+				'WEB设计',
+				'Banner规范设计',
+				'插画',
+				'概念设计'
 			],
 		},
 	},
@@ -38,7 +40,7 @@ export default {
 				dark:text-ternary-light
 			"
 	>
-		<option value class="text-sm sm:text-md">All Projects</option>
+		<option value class="text-sm sm:text-md">所有项目</option>
 		<option
 			v-for="option in selectOptions"
 			:key="option"

@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
+import SingleProject from '../views/SingleProject.vue';
 
 const routes = [
 	{
@@ -35,15 +36,12 @@ const routes = [
 		},
 	},
 	{
-		path: '/projects/single-project',
+		path: '/projects/single-project/:id',
 		name: 'Single Project',
 		// route level code-splitting
 		// this generates a separate chunk (projects.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
-		component: () =>
-			import(
-				/* webpackChunkName: "projects" */ '../views/SingleProject.vue'
-			),
+		component: SingleProject,
 		meta: {
 			title: 'Jingjing - Single Project',
 		},

@@ -123,7 +123,7 @@ export default {
 						name="name"
 						type="search"
 						required=""
-						placeholder="Search Projects"
+						placeholder="搜索项目"
 						aria-label="Name"
 					/>
 				</div>

@@ -1,11 +1,9 @@
 <script>
 import feather from 'feather-icons';
 import Button from './reusable/Button.vue';
-import FormInput from './reusable/FormInput.vue';
-import FormTextarea from './reusable/FormTextarea.vue';
 export default {
 	props: ['showModal', 'modal', 'categories'],
-	components: { Button, FormInput, FormTextarea },
+	components: { Button },
 	data() {
 		return {};
 	},
@@ -46,7 +44,7 @@ export default {
 								<h5
 									class="text-primary-dark dark:text-primary-light text-xl"
 								>
-									What project are you looking for?
+									联系方式
 								</h5>
 								<button
 									class="px-4 text-primary-dark dark:text-primary-light"
@@ -55,57 +53,24 @@ export default {
 									<i data-feather="x"></i>
 								</button>
 							</div>
-							<div class="modal-body p-5 w-full h-full">
-								<form class="max-w-xl m-4 text-left">
-									<FormInput
-										label="Full Name"
-										inputIdentifier="name"
-										class="mb-2"
-									/>
-									<FormInput
-										label="Email"
-										inputIdentifier="email"
-										inputType="email"
-									/>
+							<div class="modal-body px-5 w-full h-full text-left">
 
-									<div class="mt-6 mb-4">
-										<label
-											class="block mb-2 text-lg text-primary-dark dark:text-primary-light"
-											for="project"
-											>Project Type</label
-										>
-										<select
-											class="w-full px-5 py-3 border-1 border-gray-200 dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
-											id="project"
-											name="project"
-											type="text"
-											required=""
-											aria-label="Project Category"
-										>
-											<option
-												v-for="category in categories"
-												:key="category.id"
-												:value="category.value"
-											>
-												{{ category.name }}
-											</option>
-										</select>
-									</div>
+								<label class="block mb-2 text-lg text-primary-dark dark:text-primary-light w-80">
+									朱菁菁 - 用户体验设计师
+								</label>
 
-									<FormTextarea
-										label="Details"
-										textareaIdentifier="details"
-									/>
-
-									<div class="mt-7 pb-4 sm:pb-1">
-										<Button
-											title="Send Request"
-											class="px-4 sm:px-6 py-2 sm:py-2.5 text-white bg-indigo-500 hover:bg-indigo-600 rounded-md focus:ring-1 focus:ring-indigo-900 duration-500"
-											type="submit"
-											aria-label="Submit Request"
-										/>
-									</div>
-								</form>
+								<div class="max-w-xl my-4 flex flex-row">
+									<div class="basis-1/4">邮箱</div>
+									<div class="basis-3/4">531120183@qq.com</div>
+								</div>
+								<div class="max-w-xl my-4 flex flex-row">
+									<div class="basis-1/4">QQ</div>
+									<div class="basis-3/4">531120183</div>
+								</div>
+								<div class="max-w-xl my-4 flex flex-row">
+									<div class="basis-1/4">电话</div>
+									<div class="basis-3/4">15757115641</div>
+								</div>
 							</div>
 							<div
 								class="modal-footer mt-2 sm:mt-0 py-5 px-8 border0-t text-right"
