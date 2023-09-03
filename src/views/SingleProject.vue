@@ -1,12 +1,15 @@
 <script>
 import feather from 'feather-icons';
+import VuePdfApp from "vue3-pdf-app";
+// import this to use default icons for buttons
+import "vue3-pdf-app/dist/icons/main.css";
 import ProjectHeader from '../components/projects/ProjectHeader.vue';
 import projects from '../data/projects';
 
 export default {
 	name: 'Projects',
 	components: {
-		ProjectHeader
+		ProjectHeader, VuePdfApp
 	},
 	data: () => {
 		return {
@@ -17,6 +20,7 @@ export default {
 				title: '',
 				category: '',
 				dataImgs: [],
+				dataPdf: '',
 			},
 		}
 	},
@@ -24,13 +28,9 @@ export default {
 		const id = this.$route.params.id
 		// 在数据集合中查找对应的数据
 		const pjt = this.projects.find(p => p.id == id)
-		projects.forEach(p => {
-			console.log(p.id)	
-			console.log(p.id === id)	
-		});
-		console.log(this.projects)
-		console.log(pjt)
 		this.project = pjt
+		console.log("------")
+		console.log(this.project.dataPdf)
 	},
 	mounted() {
 		feather.replace();
@@ -53,6 +53,9 @@ export default {
 				:key="index"
 				alt="photo"
 			/>
+			<div v-if="project.dataPdf">
+				<vue-pdf-app style="height: 100vh;" :pdf="project.dataPdf"></vue-pdf-app>
+			</div>
 		</div>
 
 	</div>

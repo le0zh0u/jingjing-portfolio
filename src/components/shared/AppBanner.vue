@@ -50,8 +50,8 @@ export default {
 			</p>
 			<div class="flex justify-center sm:block" >
 				<a
-					download="Stoman-Resume.pdf"
-					href="/files/Stoman-Resume.pdf"
+					download="JingJing-Resume.pdf"
+					href="/files/JingJing-Resume.pdf"
 					class="flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-orange-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-full focus:ring-1 bg-orange-400 hover:bg-orange-600 focus:ring-orange-900 text-white duration-500 uppercase"
 					aria-label="Download Resume"
 				>
