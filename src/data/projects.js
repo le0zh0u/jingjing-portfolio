@@ -3,6 +3,15 @@
 
 const projects = [
 	{
+		id: 18,
+		title: '一木清单',
+		category: 'APP设计',
+		img: "http://img.leozhou.xyz/picGo/202309041252600.png",
+		dataImgs: [
+			"http://img.leozhou.xyz/picGo/202309041251079.png"
+		]
+	},
+	{
 		id: 8,
 		title: 'Hilight设计',
 		category: 'WEB设计',

@@ -57,9 +57,20 @@ export default {
 				>
 					<span
 						class="text-sm sm:text-lg font-general-medium duration-100"
-						>Resume</span
-					></a
+						>简历</span
+					>
+				</a>
+				<a
+					download="朱菁菁作品集_2023.pdf"
+					href="/files/JingJing-portfolio.pdf"
+					class="flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-orange-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-full focus:ring-1 bg-orange-400 hover:bg-orange-600 focus:ring-orange-900 text-white duration-500 uppercase"
+					aria-label="Download Portfolio"
 				>
+					<span
+						class="text-sm sm:text-lg font-general-medium duration-100"
+						>作品集</span
+					>
+				</a>
 			</div>
 		</div>
 
