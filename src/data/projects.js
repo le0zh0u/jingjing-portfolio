@@ -39,19 +39,9 @@ const projects = [
 		]
 	},
 	{
-		id: 9,
-		title: '数据库配置可用性测试分析',
-		category: 'WEB设计',
-		img: "http://img.leozhou.xyz/picGo/202309031858276.png",
-		dataImgs: [
-			// "http://img.leozhou.xyz/picGo/Hilight%E6%94%B9%E7%89%88%E8%AE%BE%E8%AE%A1%E8%AF%B4%E6%98%8E-%E6%9C%B1%E8%8F%81%E8%8F%81.png"
-		],
-		dataPdf: '/files/Database_configuration_usability_test_analysis.pdf'
-	},
-	{
 		id: 1,
 		title: '运动社交类——约跑',
-		category: 'APP设计',
+		category: '概念设计',
 		img: "http://img.leozhou.me//home1.png",
 		dataImgs: [
 			"http://img.leozhou.me/portfolio/detail/run-1.png",
@@ -89,7 +79,7 @@ const projects = [
 		id: 5,
         img: 'http://img.leozhou.me//home5.png',
         title: '线上BANNER规范',
-        category: 'Banner规范设计',
+        category: '设计规范',
 		dataImgs: [
 			"http://img.leozhou.me/portfolio/detail/5.png"
 		]

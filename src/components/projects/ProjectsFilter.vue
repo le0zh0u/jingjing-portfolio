@@ -12,7 +12,7 @@ export default {
 				'APP设计',
 				'UI设计',
 				'WEB设计',
-				'Banner规范设计',
+				'设计规范',
 				'插画',
 				'概念设计'
 			],
