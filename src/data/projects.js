@@ -69,7 +69,7 @@ const projects = [
 	{
 		id: 3,
         img: 'http://img.leozhou.me//home3.png',
-        title: 'Design项目管理平台',
+        title: '学生项目管理平台',
         category: 'APP设计',
 		dataImgs: [
 			"http://img.leozhou.me/portfolio/detail/3.jpg"
