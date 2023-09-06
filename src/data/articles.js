@@ -24,6 +24,13 @@ const articles = [
 		dataPdf: "/files/以平滑升级工具为例，如何建立一份用户体验地图.pdf"
 	},
 	{
+		id: 5,
+		title: '监控告警竞品分析',
+		type: 'pdf',
+		createYear:'2019',
+		dataPdf: "/files/监控告警竞品分析.pdf"
+	},
+	{
 		id: 4,
 		title: '数据库配置可用性测试分析',
 		type: 'pdf',
